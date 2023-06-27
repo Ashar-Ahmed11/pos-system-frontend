@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Signup = () => (
     <div className="main-wrapper">
       <div className="account-content">
@@ -37,14 +39,14 @@ export const Signup = () => (
                 </div>
               </div>
               <div className="form-login">
-                <a className="btn btn-login">Sign Up</a>
+                <Link to="/" className="btn btn-login">Sign Up</Link>
               </div>
               <div className="signinform text-center">
                 <h4>
                   Already a user?{" "}
-                  <a href="signin.html" className="hover-a">
+                  <Link to="/signin" className="hover-a">
                     Sign In
-                  </a>
+                  </Link>
                 </h4>
               </div>
               <div className="form-setlogin">
